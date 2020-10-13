@@ -1,0 +1,35 @@
+{
+  "name": "WikiWhatsThis",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": [
+    "models/*.joblib",
+    "models/*.csv",
+    "models/*.json",
+    "models/*.npz",
+    "pyodide/*",
+    "pyodide.asm.*",
+    "icon.png"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "WikiWhatsThis"
+  },
+  "icons": {
+    "32": "icon.png",
+    "64": "icon.png",
+    "128": "icon.png",
+    "256": "icon.png"
+  },
+  "permissions": ["contextMenus"],
+  "content_security_policy": "script-src 'self' 'wasm-eval'; object-src 'self'"
+}

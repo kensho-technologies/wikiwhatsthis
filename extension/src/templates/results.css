@@ -1,0 +1,141 @@
+html {
+  font-size: 16px;
+  font-family: Roboto, Arial;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 10px 10px 25px 10px;
+  border-bottom: 10px solid #7D7D7D;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+pre {
+  font-family: inherit;
+}
+
+.header {
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-logo {
+  margin-right: 10px;
+  height: 60px;
+  width: 66.56px;
+}
+
+.header-title {
+  font-weight: bold;
+  color: #4FAEC5;
+  margin-left: 20px;
+}
+
+.logo-this {
+  background-color: #4FAEC5;
+  color: #ffffff;
+}
+
+.query {
+  background-color: #EEEEEE;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  padding: 10px 10px 0 10px;
+  margin: 25px 0 0 0;
+  border-radius: 4px;
+  font-size: 18px;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+.query-title {
+  color: #4FAEC5;
+  text-transform: uppercase;
+  font-weight: bold;;
+}
+
+.query-content {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #7D7D7D;
+  max-height: 100px;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
+}
+
+.results {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5px;
+  column-gap: 10px;
+  margin: 25px -5px 0 -5px;
+}
+
+.result {
+  overflow: hidden;
+  padding: 5px;
+}
+
+.result a {
+  height: 40px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #4FAEC5;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.result-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.result-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 5px;
+}
+
+.result-meta {
+  color: #7D7D7D;
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.result-meta-item + .result-meta-item {
+  margin-left: 6px;
+}
+
+.result .button {
+  background-color: #4FAEC5;
+  border-radius: 0 4px 4px 0;
+  color: #ffffff;
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}

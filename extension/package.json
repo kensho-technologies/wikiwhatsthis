@@ -1,0 +1,50 @@
+{
+  "name": "wikiwhatsthis",
+  "private": true,
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix"
+    ]
+  },
+  "scripts": {
+    "postinstall": "npm run update",
+    "start": "cross-env NODE_ENV=development webpack-cli --watch --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack-cli --config webpack.config.js",
+    "update": "wget -O inlinks40-intro-ngram11-snowball.tar.gz 'https://kensho-general.s3.amazonaws.com/users/gabriel/wikiwhatsthis/public/models/latest/inlinks40-intro-ngram11-snowball.tar.gz?AWSAccessKeyId=AKIAJKJ2SZCJDR6Q6RYA&Signature=qm109pNlt09GBhCt%2FyDvkedrU5I%3D&Expires=1618049435' && wget -O pyodide.tar.gz 'https://kensho-general.s3.amazonaws.com/users/gabriel/wikiwhatsthis/public/pyodide.tar.gz?AWSAccessKeyId=AKIAJKJ2SZCJDR6Q6RYA&Signature=bcgu6pc%2FBq3FR8zrzN2gMLKw%2BvY%3D&Expires=1618049436' && tar -C public/ -xzvf pyodide.tar.gz && tar -C public/models -xzvf inlinks40-intro-ngram11-snowball.tar.gz && mv public/models/inlinks40-intro-ngram11-snowball/* public/models/ && rm -rf public/models/inlinks40-intro-ngram11-snowball",
+    "lint": "eslint --fix **/*.ts"
+  },
+  "devDependencies": {
+    "@babel/core": "7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.14",
+    "@typescript-eslint/eslint-plugin": "^3.10.0",
+    "@typescript-eslint/parser": "^3.10.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "core-js": "^3.6.5",
+    "cross-env": "^5.2.1",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "jest": "^26.5.2",
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2",
+    "raw-loader": "^4.0.2",
+    "ts-jest": "^26.4.1",
+    "ts-loader": "^4.3.0",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "3.3.10"
+  }
+}

@@ -9,6 +9,7 @@ WikiWhatsThis is an R&D project at Kensho focused on fighting misinformation by 
 During the summer of 2020 we had the pleasure of hiring Minhvy Van to help us on the project. Her stipend was paid using a [WikiCred grant](https://misinfocon.com/introducing-the-second-round-of-wikicred-grantees-6aa788dc0850). 
 
 # Outreach / Presentations
+* [Misinfocon follow up blog post (2020-11-18)](https://misinfocon.com/wikiwhatsthis-initial-open-sourcing-and-next-steps-22159786120e)
 * [Minhvy presenting at WikiCred Demo Day (2020-09-10)](https://www.youtube.com/watch?v=C7ttHUokqes)
 * [WikiCred Demo Day Slides (2020-09-10)](https://drive.google.com/file/d/13CibYDq-3PG4AM9hyRfo_7M0bHY7sNug/view?usp=sharing)
 * [Misinfocon introductory blog post (2020-09-09)](https://misinfocon.com/wikiwhatsthis-will-battle-misinformation-by-grounding-online-stories-with-wikipedia-content-f7db3489f4ea)

@@ -8,8 +8,8 @@ const IS_DEV = process.env.NODE_ENV !== 'production';
 const ROOT_PATH = path.join(__dirname);
 const PATHS = {
   ROOT: ROOT_PATH,
-  OUT: `${ROOT_PATH}/.webpack.${IS_DEV ? 'build' : 'dist'}`,
-  DIST: `${ROOT_PATH}/.webpack.dist`,
+  OUT: `${ROOT_PATH}/webpack-${IS_DEV ? 'build' : 'dist'}`,
+  DIST: `${ROOT_PATH}/webpack-dist`,
 }
 
 const nodeExternals = () => fs.readdirSync('node_modules').reduce((acc, mod) => {
